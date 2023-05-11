@@ -11,7 +11,7 @@ resource google_sql_database_instance "master_instance" {
         name  = "WWW"
         value = "0.0.0.0/0"
       }
-      require_ssl = false
+      require_ssl = true
     }
     backup_configuration {
       enabled = false
